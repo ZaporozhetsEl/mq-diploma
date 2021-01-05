@@ -26,7 +26,63 @@
         <div class='header-title'><h1>Блог о творчестве, спорте и образе жизни</h1></div>
       </header>
 
-      <div class='news'>
+      <article class="trends">
+        <div class="trends_title"><h2>Сейчас в тренде</h2></div>
+      <div class="trend_cards">
+        <div class="trend_card">
+          <div class="trend_preview"><img src="imges/trend1.jpg" class="trend_img" alt=""></div>
+          <div class="trend_body">
+            <ul class="trend_tegs">
+                <li class="trend_teg"><a href="#" class="trend_teg_link">Lifestyle</a></li>
+                <li class="trend_teg"><a href="#" class="trend_teg_link">Interior</a></li>
+            </ul>
+            <div class="trend_title">
+                <a href="#" class="trend_title_link"><h2>Сейчас в тренде: сад на подоконнике</h2></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="trend_card">
+          <div class="trend_preview"><img src="imges/trend2.jpg" class="trend_img" alt=""></div>
+          <div class="trend_body">
+            <ul class="trend_tegs">
+                <li class="trend_teg"><a href="#" class="trend_teg_link">Food</a></li>
+            </ul>
+            <div class="trend_title">
+                <a href="#" class="trend_title_link"><h2>Сыры на красивых картинках из интернета: какие они на вкус?</h2></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="trend_card">
+          <div class="trend_preview"><img src="imges/trend3.jpg" class="trend_img" alt=""></div>
+          <div class="trend_body">
+            <ul class="trend_tegs">
+                <li class="trend_teg"><a href="#" class="trend_teg_link">Lifestyle</a></li>
+                <li class="trend_teg"><a href="#" class="trend_teg_link">Trevel</a></li>
+            </ul>
+            <div class="trend_title">
+                <a href="#" class="trend_title_link"><h2>Собираемся в первый поход в горы</h2></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="trend_card">
+          <div class="trend_preview"><img src="imges/trend4.jpg" class="trend_img" alt=""></div>
+          <div class="trend_body">
+            <ul class="trend_tegs">
+                <li class="trend_teg"><a href="#" class="trend_teg_link">Food</a></li>
+                <li class="trend_teg"><a href="#" class="trend_teg_link">Health</a></li>
+            </ul>
+            <div class="trend_title">
+                <a href="#" class="trend_title_link"><h2>Сейчас в тренде: сколько витаминов в лимонах?</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class='news'>
         <main>
         <div class='news-desc'>
            <div class='news-icon'><img src='imges/last-post1.jpg' alt=''></div>
@@ -94,7 +150,7 @@
           <div class='news-text'><p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p></div>
           </div>
         </div>
-    </main>
+      </main>
         <aside class='aside-news'> 
           <div class='aside-ferst-block'>
           <div class='aside-header'><h3>Новые посты</h3></div>
@@ -130,7 +186,7 @@
           </div>
           </div> 
           
-          <div class='aside-news-desc'>
+        <div class='aside-news-desc'>
            <div class='aside-news-icon'><img src='imges/7.jpg' alt=''></div>
           <div class='aside-news-content'>
             <div class='aside-news-data'>14 июня 2019</div>
@@ -157,7 +213,7 @@
              </label>
             <button class='subscribe-button' name='subscribe' type='submit'>Подписаться</button>
           </form>
-            </div>
+        </div>
            
           <div class='tegs'>
             <div class='tegs-title'>
@@ -188,8 +244,33 @@
             </ul>
           </div>
         </aside>
-       </div>
+    </div> <!--закрывет news-->
           
+    <article class="products">
+        <div class="products_title"><h2>Наши изделия</h2></div>
+          <div class="prodact_card">
+            <div class="product_item"><img src="/imges/shop-item-desk1.jpg" alt=""></div>
+            <div class="shop_title"><h2><a href="#">Подушки на диван</a></h2></div>
+            <div class="shop_content"><p>Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.</p></div>
+            <div class="price sale_price"><p>1000₽</p><p>800₽</p></div>
+            <button class="shop_button" type="button">В магазин</button>
+          </div>
+          <div class="prodact_card">
+            <div class="product_item"><img src="/imges/shop-item-desk2.jpg" alt=""></div>
+            <div class="shop_title"><h2><a href="#">Кукла "зайчик"</a></h2></div>
+            <div class="shop_content"><p>Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена<a href="#">весенняя серия постов</a> в блоге и несколько подкастов.</p></div>
+            <div class="price sale_price"><p>3500₽</p></div>
+            <button class="shop_button" type="button">В магазин</button>
+          </div>
+          <div class="prodact_card">
+            <div class="product_item"><img src="/imges/shop-item-desk3.jpg" alt=""></div>
+            <div class="shop_title"><h2><a href="#">Шестиугольная рамка</a></h2></div>
+            <div class="shop_content"><p>Необычна рамка для украшения дома из видео <a href="#">"Как сделать рамку из подручных средств за 30 минут"</a></p></div>
+            <div class="price sale_price"><p>500₽</p><p>400₽</p></div>
+            <button class="shop_button" type="button">В магазин</button>
+          </div>
+      </article>
+
       <footer class='footer'>
         <address class='widget'>
           <ul class='socials'>
