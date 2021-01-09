@@ -123,32 +123,51 @@ body {
   background-color: #e1d9bd;
 }
 .trend-cards {
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 } 
 .trend-card {
   width: 24.5%;
-}
-.trend-preview {
   display: flex;
+  align-items: flex-end;
 }
 .trend-img {
-  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  max-width: 100%;
+}
+.trend-preview {
+  position: relative;
+  display: flex;
+}
+.trend-preview::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
 }
 .trend-body {
-  padding-left: 35px;
-  width: 230px;
   display: flex;
   flex-wrap: wrap;
+  width: 270px;
   position: absolute;
-  top: 100px;
-  
   border: solid 3px #887c43;
+  z-index: 2;
+
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding: 30px 0 30px 30px;
 }
 .trend-tegs {
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: nowrap;
   list-style-type: none;
@@ -160,14 +179,17 @@ body {
   text-decoration: none;
   text-transform: uppercase; 
   font-family: OpenSans-Bold;
-  font-size: 14px;
+  font-size: 12px;
   color: #887c43;
+}
+.trend-title {
+  padding-top: 15px;
 }
 .trend-title-link {
   text-decoration: none;
   text-transform: uppercase; 
   font-family: OpenSans-Bold;
-  font-size: 20px;
+  font-size: 14px;
   color: white;
 }
 .trend-title-link h2 {
