@@ -50,13 +50,13 @@ body {
   align-items: center;
   width: 1200px;
     
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1.25%;
+  padding-right: 1.25%;
   margin-left: auto;
   margin-right: auto;
 }
 .logo {
-  width: 180px;
+  width: 15%;
 }
 .menu-list {
   display: flex;
@@ -129,8 +129,11 @@ body {
 } 
 .trend-card {
   width: 24.5%;
+  height: 100%;
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
+
 }
 .trend-img {
   object-position: center;
@@ -156,14 +159,15 @@ body {
 .trend-body {
   display: flex;
   flex-wrap: wrap;
-  width: 270px;
+  flex-direction: column;
+  width: 20%;
   position: absolute;
   border: solid 3px #887c43;
   z-index: 2;
 
+  padding: 15px 0 15px 15px;
   margin-bottom: 30px;
-  margin-left: 30px;
-  padding: 30px 0 30px 30px;
+  margin-left: 25px;
 }
 .trend-tegs {
   padding: 0;
@@ -191,6 +195,8 @@ body {
   font-family: OpenSans-Bold;
   font-size: 14px;
   color: white;
+
+
 }
 .trend-title-link h2 {
   margin: 0;
@@ -556,7 +562,8 @@ main {
 /* Products */
 
 .products {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -584,20 +591,67 @@ main {
 .product-cards {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+.product-item {
+  text-align: center;
 }
 .product-card {
   display: flex;
-  flex-wrap: wrap;
-  width: 30%;
+  flex-direction: column;
 }
 .product-body {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
   border: solid 3px #887c43;
+  width: 320px;
 
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 50px 20px 20px 20px;
+}
+.shop-title h2 {
+  margin: 0;
+}
+.shop-title a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: OpenSans-Bold;
+}
+.shop-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+}
+.shop-content a {
+  text-decoration: none;
+  color: #887c43;
+}
+.shop-content p {
+  margin: 0;
+  padding: 0;
+}
+.shop-button {
+  border: none;
+  background-color: #b59f5b;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+
+  padding: 20px 25px;
+}
+.price {
+  color: #000000;
+  font-family: OpenSans-Bold;
+  font-size: 20px;
+}
+.price p {
+  margin: 0;
 }
 /*Footer*/
 
@@ -667,4 +721,57 @@ main {
   font-family: OpenSans-Bold;
   font-size: 12px;
   color: #999999;
+}
+
+/* Popup */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  top: 0;
+  z-index: 3;
+}
+.popup-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 230px;
+  width: 390px;
+  padding: 50px 30px 50px 30px;
+  background-color: #f4f7f6;
+}
+.popup-title h2 {
+  margin: 0;
+}
+.popup-title {
+  font-family: OpenSans-Bold;
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.popup-title::after {
+  content: " ";
+  display: block;
+        
+  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65px;
+  height: 3px;
+        
+  background-color: #e1d9bd; 
+}
+.select-title {
+  font-family: OpenSans-Regular;
+  font-size: 13px;
+}
+.popup-select {
+  display: block;
+  box-sizing: border-box;
+  width: 330px;
+  height: 45px;
 }
