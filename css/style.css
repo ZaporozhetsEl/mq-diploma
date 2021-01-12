@@ -974,7 +974,7 @@ main {
   .header-menu {
    max-width: 330px;
   }
-}  .logo {
+  .logo {
     max-width: 330px;
     width: 100%;
     margin-top: 100px;
@@ -1052,5 +1052,4 @@ main {
   .widget {
     max-width: 330px;
   }
-
 }
