@@ -429,6 +429,10 @@ main {
   color: #a0a2a2;
   border: none;
 }
+.email-field:focus {
+  outline: none;
+  border-bottom: 1px solid #b59f5b;
+}
 .email {
   position: absolute;
   width: 1px;
@@ -563,7 +567,7 @@ main {
 
 .products {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -594,11 +598,21 @@ main {
   justify-content: space-between;
 }
 .product-item {
-  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 20px 0 20px;
+}
+.product-img {
+  width: 100%;
 }
 .product-card {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  align-content: flex-end;
+
+  max-width: 345px;
+  position: relative;
 }
 .product-body {
   display: flex;
@@ -606,8 +620,8 @@ main {
   align-items: flex-start;
   width: 100%;
   justify-content: space-between;
-  border: solid 3px #887c43;
-  width: 320px;
+  border: solid 3px #b59f5b;
+  max-width: 320px;
 
   padding: 50px 20px 20px 20px;
 }
@@ -621,7 +635,7 @@ main {
   font-family: OpenSans-Bold;
 }
 .shop-content {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
   color: #000000;
   font-family: OpenSans-Regular;
@@ -631,11 +645,17 @@ main {
   text-decoration: none;
   color: #887c43;
 }
+.shop-content a:hover {
+  border-bottom: solid 1px #887c43;
+}
 .shop-content p {
   margin: 0;
   padding: 0;
 }
 .shop-button {
+  display: flex;
+  align-items: center;
+  height: 48px;
   border: none;
   background-color: #b59f5b;
   font-family: OpenSans-Bold;
@@ -652,6 +672,10 @@ main {
 }
 .price p {
   margin: 0;
+}
+.sale-price {
+  font-size: 14px;
+  text-decoration: line-through;
 }
 /*Footer*/
 
@@ -850,6 +874,10 @@ main {
   background-color: #f4f7f6;
   color: #9a9a9a;
 }
+.textarea-content:focus {
+  outline: none;
+  border-bottom: 1px solid #b59f5b;
+}
 .send-button {
   display: block;
   border: none;
@@ -862,4 +890,11 @@ main {
   font-size: 14px;
   text-transform: uppercase;
   color: white;
+}
+.send-button:hover {
+  border-bottom: 1px solid #b59f5b;
+}
+.send-button:focus {
+  outline: none;
+  border-bottom: 1px solid #b59f5b;
 }
