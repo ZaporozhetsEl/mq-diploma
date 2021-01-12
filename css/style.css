@@ -123,8 +123,9 @@ body {
   background-color: #e1d9bd;
 }
 .trend-cards {
+  width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 } 
 .trend-card {
@@ -208,7 +209,7 @@ body {
   display: flex;
   padding-top: 63px;
     
-  width: 1200px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -897,4 +898,66 @@ main {
 .send-button:focus {
   outline: none;
   border-bottom: 1px solid #b59f5b;
+}
+@media (max-width: 1200px) {
+  .menu-list {
+    display: none;
+  }
+  .menu::before {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 3px;
+
+    background-color: white;
+  }
+  .trend-card {
+    width: 49.5%;
+  }
+  .trend-card:nth-child(n+3) {
+    margin-top: 5px;
+  }
+  .trend-card:nth-child(2n) {
+    margin-left: 5px;
+  }
+  .trend-preview {
+    width: 100%;
+  }
+  .trend-img {
+    width: 100%;
+  }
+  .trend-body {
+    width: 40%;
+  }
+  
+  .news {
+    max-width: 682px;
+    width: 100%;
+  }
+  main {
+    max-width: 392px;
+    width: 100%;
+  }
+  .news-desc {
+    flex-wrap: wrap;
+  }
+  .aside-news {
+    margin-left: 32px;
+  }
+  .products {
+    max-width: 696px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product-cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .product-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
 }
