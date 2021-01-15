@@ -751,7 +751,6 @@ main {
 /* Popup */
 
 .popup {
-  display: none;
   position: fixed;
   width: 100%;
   min-height: 100%;
@@ -767,6 +766,17 @@ main {
   width: 390px;
   padding: 50px 30px 50px 30px;
   background-color: white;
+}
+.popup::before {
+  content: " ";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+
+  background-image: url(../svg/form-x.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: right 5% top 3%;
 }
 .popup-title h2 {
   margin: 0;
@@ -957,6 +967,10 @@ main {
   .widget {
     max-width: 697px;
   }
+  .popup-content {
+    max-width: 390px;
+    width: 100%;
+  }
 
 }
 @media (max-width: 640px) {
@@ -1051,5 +1065,11 @@ main {
   }
   .widget {
     max-width: 330px;
+  }
+  .popup-content {
+    max-width: 318px;
+  }
+  .textarea-content {
+   width: 276px;
   }
 }
