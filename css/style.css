@@ -58,6 +58,10 @@ body {
 .logo {
   width: 15%;
 }
+.burger-menu {
+  position: absolute;
+  display: none;
+}
 .menu-list {
   display: flex;
   flex-wrap: wrap;
@@ -751,6 +755,7 @@ main {
 /* Popup */
 
 .popup {
+  display: none;
   position: fixed;
   width: 100%;
   min-height: 100%;
@@ -762,7 +767,6 @@ main {
 .popup-content {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3%;
   width: 390px;
   padding: 50px 30px 50px 30px;
   background-color: white;
@@ -772,11 +776,12 @@ main {
   display: inline-block;
   width: 30px;
   height: 30px;
+  margin-top: 2%;
+  margin-left: 63%;
 
   background-image: url(../svg/form-x.svg);
-  background-size: 30px;
+  background-size: 25px;
   background-repeat: no-repeat;
-  background-position: right 5% top 3%;
 }
 .popup-title h2 {
   margin: 0;
@@ -911,7 +916,31 @@ main {
 }
 @media (max-width: 1200px) {
   .header {
+    position: relative;
+    z-index: 2;
     background-image: url(../imges/banner-bg-tablet.jpg);
+
+    padding-top: 37px;
+  }
+  .header::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+      
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+  } 
+  .header-menu {
+    max-width: 697px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  .burger-menu {
+    display: block;
   }
   .menu-list {
     display: none;
@@ -934,7 +963,6 @@ main {
   .trend-body {
     width: 40%;
   }
-  
   .news {
     max-width: 682px;
     width: 100%;
@@ -950,19 +978,15 @@ main {
     margin-left: 32px;
   }
   .products {
-    max-width: 697px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 850px;
   }
   .product-cards {
-    width: 100%;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .product-card {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
   }
   .widget {
     max-width: 697px;
@@ -971,15 +995,33 @@ main {
     max-width: 390px;
     width: 100%;
   }
+  .popup::before {
+    margin-left: 67%;
+  }
 
 }
 @media (max-width: 640px) {
   .header {
+    position: relative;
+    z-index: 2;
     background-image: url(../imges/banner-mobile.jpg);
   }
+  .header::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+      
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+  } 
   .header-title {
-    margin-top: 0;
+    margin-top: 40px;
     max-width: 330px;
+    line-height: 15px;
   }
   .header-title h1 {
     font-size: 26px;
@@ -989,7 +1031,7 @@ main {
    max-width: 330px;
   }
   .logo {
-    max-width: 330px;
+    max-width: 273px;
     width: 100%;
     margin-top: 100px;
     margin-left: auto;
@@ -1057,6 +1099,14 @@ main {
     margin-right: auto;
     margin-left: auto;
   }
+  .tegs-list {
+    padding-right: 0;
+    justify-content: space-between;
+    max-width: 323px;
+  }
+  .teg {
+    margin: 0;
+  }
   .product-cards {
     justify-content: center;
   }
@@ -1068,6 +1118,9 @@ main {
   }
   .popup-content {
     max-width: 318px;
+  }
+  .popup::before {
+    margin-left: 78%;
   }
   .textarea-content {
    width: 276px;
