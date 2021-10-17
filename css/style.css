@@ -1058,6 +1058,8 @@ main {
   }
   .trend-body {
     width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .news {
     padding-top: 45px;
@@ -1069,7 +1071,11 @@ main {
     margin-right: auto;
   }
   .news-desc {
-    max-width: 321px;
+    width: 100%;
+  }
+
+  .news-desc img {
+    width: 100%;
   }
   .news-desc:nth-child(n+2) {
     margin-top: 35px;
@@ -1095,11 +1101,14 @@ main {
   }
   .news-icon {
     margin-left: 0;
+  
   }
   .news-icon img {
     width: 321px;
   }
   .aside-news {
+    max-width: 321px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
